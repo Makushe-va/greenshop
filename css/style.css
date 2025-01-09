@@ -1,0 +1,81 @@
+** {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 500px;
+    margin: auto;
+}
+.title {
+    width: 157px;
+    margin: 52px auto 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title .login,
+.title .register {
+    font-size: 20px;
+}
+.title .login {
+    color: #3D3D3D;
+}
+.title .register {
+    color: #46A358;
+}
+.description {
+    color: #3D3D3D;
+    font-size: 13px;
+    margin: 0 auto 14px;
+    width: 300px;
+}
+.form-input {
+    width: 300px;
+    height: 40px;
+    margin: 0 auto 16px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #3D3D3D;
+    padding: 0 10px;
+}
+.form-button {
+    width: 300px;
+    height: 40px;
+    margin: 0 auto 36px;
+    display: block;
+    font-size: 16px;
+    background-color: #46A358;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0px;
+}
+.or-register {
+    width: 300px;
+    margin: 0 auto 27px;
+    text-align: center;
+    font-size: 13px;
+    color: #3D3D3D;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    margin: 0 auto 15px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #727272;
+    font-size: 13px;
+}
+.social-link img {
+    width: 20px;
+    height: 20px;
+    margin-right: 9px;
+}
+/*index_html*/
