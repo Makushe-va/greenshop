@@ -1,11 +1,14 @@
-** {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container {
+.container_container {
     width: 500px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .title {
     width: 157px;
@@ -79,3 +82,100 @@
     margin-right: 9px;
 }
 /*index_html*/
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    margin-bottom: 12px;
+    padding-bottom: 30px;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+header nav ul li a{
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+header .login{
+    background:#46A358;
+    border-radius: 6px;
+    padding: 7px 17px;
+    display: flex;
+    align-items: center;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+header .login svg {
+    margin-right: 4px;
+}
+header .login svg path{
+    transition: 0.4s;
+}
+header .login:hover{
+    background-color: white;
+    color: #46A358;
+}
+header .login:hover svg path{
+    stroke: #46A358;
+}
+.banner article{
+    max-width: 557px;
+}
+.banner_title_title{
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #3D3D3D;
+    margin-bottom: 7px;
+}
+.banner_title{
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 900;
+    font-size: 70px;
+    color: #3D3D3D;
+    margin-bottom: 5px;
+}
+.banner_text{
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+    margin-bottom: 44px;
+}
+.banner_shop{
+    height: 40px;
+    background:#46A358;
+    border-radius: 6px;
+    padding: 11px 27px;
+    display: inline-flex;
+    align-items: center;
+    font-family: "Cera Pro", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.banner_shop:hover{
+    background-color: white;
+    color: #46A358;
+}
+
+
+
+
+
