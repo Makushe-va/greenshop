@@ -223,9 +223,39 @@ header nav ul li .dropdown li:last-of-type a:after{
 }
 header nav ul li .dropdown a:hover:after{
     background-image: url("../img/arow_hover.svg");
-    transform:rotate(180deg);
+    transform: rotate(180deg);
 }
 header nav ul li.drop:hover .dropdown{
+    display: block;
+}
+header nav ul li .dropdown-dropdown{
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: -148px;
+    left: 190px;
+    padding-top: 40px;
+}
+header nav ul li .dropdown-dropdown a:before{
+    display: none;
+}
+header nav ul li .dropdown-dropdown a{
+    padding: 8px 14px;
+    min-width: 178px;
+    display: inline-block;
+    background-color: #EDF6EE;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3D3D3D;
+    line-height: 20px;
+    position: relative;
+}
+header nav ul li .dropdown-dropdown li a:after {
+    display: none !important;
+    content: none;
+}
+header nav ul li.drop-drop:hover .dropdown-dropdown{
     display: block;
 }
 header .login{
@@ -674,6 +704,7 @@ header .login:hover svg path{
 .blogs-btn:hover .arrow-icon {
     background-image: url("../img/Arrow - Right2.svg");
 }
+
 
 
 
