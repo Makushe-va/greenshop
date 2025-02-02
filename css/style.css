@@ -133,7 +133,7 @@
     justify-content: space-between;
     align-items: stretch;
     gap: 50px;
-    margin-bottom: 100px;
+    padding: 0;
 }
 header{
     margin-bottom: 12px;
@@ -160,11 +160,73 @@ header nav ul li a{
     font-size: 16px;
     color: #3d3d3d;
     text-decoration: none;
+    position: relative;
+}
+header nav ul li a:before{
+    content: '';
+    display: block;
+    background: #46A358;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom:-25px;
+    transition: 0.4s;
 }
 header nav ul li a:hover{
-    color: #3D3D3D;
-    font-family: 'cera_problack';, sans-serif;
+    color: #46A358;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 700;
+}
+header nav ul li a:hover:before{
+    width: 100%;
+}
+header nav ul li {
+    position: relative;
+}
+header nav ul li .dropdown{
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    left: -60px;
+    padding-top: 40px;
+}
+header nav ul li .dropdown a:before{
+    display: none;
+}
+header nav ul li .dropdown a{
+    padding: 8px 14px;
+    min-width: 188px;
+    display: inline-block;
+    background-color: #EDF6EE;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3D3D3D;
+    line-height: 20px;
+    transition: 0.3s;
+    position: relative;
+}
+header nav ul li .dropdown a:hover{
+    background-color: #1A712A;
+    color: white;
+}
+header nav ul li .dropdown li:last-of-type a:after{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 10px;
+    position: absolute;
+    right: 17px;
+    top: 12px;
+    background-image: url("../img/arow.svg") ;
+}
+header nav ul li .dropdown a:hover:after{
+    background-image: url("../img/arow_hover.svg");
+    transform:rotate(180deg);
+}
+header nav ul li.drop:hover .dropdown{
+    display: block;
 }
 header .login{
     background:#46A358;
@@ -329,6 +391,9 @@ header .login:hover svg path{
     color: #3D3D3D;
     margin-left: auto;
 }
+.products{
+    margin-bottom: 90px;
+}
 .card-products{
     display: flex;
     flex-wrap: wrap;
@@ -349,7 +414,7 @@ header .login:hover svg path{
     padding: 7px 9px;
     display: inline-block;
     position: absolute;
-    left: 0;
+    left: -20px;
     top: 14px;
 }
 .card-products .img-block{
@@ -359,7 +424,7 @@ header .login:hover svg path{
 .card-products article .icons{
     position: absolute;
     bottom: -15px;
-    left: 67px;
+    left: 50px;
     display: flex;
     gap: 27px;
     opacity: 0;
@@ -369,8 +434,8 @@ header .login:hover svg path{
     opacity: 1;
 }
 .card-products .icon img{
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background-color: white;
     padding: 5px;
     transition: transform 0.2s ease-in-out;
@@ -468,7 +533,7 @@ header .login:hover svg path{
     text-align: right;
 }
 .blogs-banner h3{
-    font-family: 'cera_problack';
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 900;
     font-size: 18px;
     line-height: 24px;
@@ -508,7 +573,7 @@ header .login:hover svg path{
     background-color: white;
     color: #46A358;}
 .blogs-banner svg {
-    margin-left: 5.56px;
+    margin-left: 6px;
 }
 .blogs-banner svg path{
     transition: 0.4s;
@@ -517,15 +582,17 @@ header .login:hover svg path{
     stroke: #46A358;
 }
 .blogs-container{
-    display: block;
+    text-align: center;
+}
+.blogs-posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     margin-bottom: 10px;
 }
-.blogs-container.blogs-posts{
-  margin-bottom: 30px;
-}
 .blogs-container.blogs-posts h1{
-    font-family: 'cera_problack';, sans-serif;
+    font-family: 'fontspring_demo_-_cera_proRg', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 16px;
@@ -587,12 +654,25 @@ header .login:hover svg path{
     display: block;
     text-align: left;
     margin-bottom: 100px;
-
+    transition: 0.3s;
+    position: relative;
 }
-.blogs-btn img{
-    width: 15px;
-    height: 10px;
-    margin-left: 6px;
+.blogs-btn:hover{
+    color: #46A358;
+}
+.arrow-icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../img/Arrow - Right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 2px;
+    left: 80px;
+}
+.blogs-btn:hover .arrow-icon {
+    background-image: url("../img/Arrow - Right2.svg");
 }
 
 
