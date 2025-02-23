@@ -343,7 +343,7 @@ header .login:hover svg path{
     justify-content: center;
     align-items: center;
 }
-.sidebar{
+.all-sidebar{
     width: 310px;
     display: flex;
     flex-direction: column;
@@ -365,12 +365,14 @@ header .login:hover svg path{
 }
 .sidebar ul li{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 8px;
 }
 .sidebar ul li a{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
     color: #3D3D3D;
     font-family: 'cera_proregular', sans-serif;
     font-weight: 400;
@@ -382,7 +384,7 @@ header .login:hover svg path{
     color: #46A358;
     font-weight: 700;
 }
-.sidebar img{
+.super-sale img{
     width:100%;
 }
 .cards{
@@ -431,7 +433,6 @@ header .login:hover svg path{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 41px;
 }
 .card-products article{
     border-top:solid 1px transparent;
@@ -606,6 +607,8 @@ header .login:hover svg path{
     border-radius: 6px;
     padding: 11px 27px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     font-family: 'cera_proregular', sans-serif;
     font-weight: 500;
@@ -617,14 +620,15 @@ header .login:hover svg path{
 }
 .blogs-banner a:hover{
     background-color: white;
-    color: #46A358;}
-.blogs-banner svg {
+    color: #46A358;
+}
+.blogs-banner svg{
     margin-left: 6px;
 }
 .blogs-banner svg path{
     transition: 0.4s;
 }
-.blogs-banner:hover svg path{
+.blogs-banner a:hover svg path{
     stroke: #46A358;
 }
 .blogs-container{
@@ -731,6 +735,26 @@ header .login:hover svg path{
 .footer-card{
     min-width: 204px;
     margin-right: 62px;
+    position: relative;
+}
+.footer-card:nth-child(2):before,
+.footer-card:nth-child(2):after{
+    content: "";
+    display: block;
+    width: 187px;
+    height: 1px;
+    background:rgba(70, 163, 88, 0.1);;
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+}
+.footer-card:nth-child(2)::before {
+    left: -120px;
+    top: 100px;
+}
+.footer-card:nth-child(2)::after {
+    right: -120px;
+    top: 100px;
 }
 .footer-content img{
     width: 85px;
