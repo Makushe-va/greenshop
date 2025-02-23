@@ -338,7 +338,7 @@ header .login:hover svg path{
     color: #46A358;
 }
 .banner_img{
-    width: 507px;
+    max-width: 507px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -438,6 +438,7 @@ header .login:hover svg path{
     border-top:solid 1px transparent;
     position: relative;
     transition: border-color 0.3s ease-in-out;
+    width: 258px;
 }
 .card-products article:hover{
     border-top:solid 1px #46A358 ;
@@ -555,6 +556,12 @@ header .login:hover svg path{
     background: url("../img/Arrow-hover - Right 2.svg") no-repeat center;
     background-size: 18px 18px;
 }
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .blogs{
     display: flex;
     justify-content: space-between;
@@ -567,7 +574,7 @@ header .login:hover svg path{
     background-color: #FBFBFB;
     padding: 20px;
     gap: 20px;
-    width: 586px;
+    max-width: 586px;
 }
 .blogs-banner img{
     width: 250px;
@@ -662,6 +669,10 @@ header .login:hover svg path{
     display: flex;
     justify-content: space-around;
     gap: 44px;
+
+}
+.blogs-posts-cards article{
+    max-width: 268px;
 }
 .blogs-posts-cards img{
     width: 268px;
@@ -884,7 +895,11 @@ header .login:hover svg path{
     padding: 33px 25px;
     margin: 0;
     background-color: #FBFBFB;
-    width: 100%;
+    width: 100%;}
+.footer-list-item{
+    flex: 1 1 33.33%;
+    min-width: 100px;
+    padding: 10px;
 }
 .footer-list h3{
     font-family: 'cera_probold', sans-serif;
