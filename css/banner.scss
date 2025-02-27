@@ -1,0 +1,62 @@
+$main_color:#46A358;
+$main_font:'cera_proregular';
+
+.banner{
+  padding: 50px 0;
+}
+.banner .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 93px;
+}
+.banner-content{
+  max-width: 557px;
+}
+.banner_title_title{
+  font-family: $main_font;
+  font-weight: 500;
+  font-size: 14px;
+  color: #3D3D3D;
+  margin-bottom: 7px;
+}
+.banner_title{
+  font-family: 'cera_probold', sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 70px;
+  color: #3D3D3D;
+  margin-bottom: 5px;
+}
+.banner_text{
+  font-family: $main_font;
+  font-weight: 400;
+  font-size: 14px;
+  color: #727272;
+  margin-bottom: 44px;
+}
+.banner_shop{
+  height: 40px;
+  background:$main_color;
+  border-radius: 6px;
+  padding: 11px 27px;
+  display: inline-flex;
+  align-items: center;
+  font-family: 'cera_probold', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.banner_shop:hover{
+  background-color: white;
+  color: $main_color;
+}
+.banner_img{
+  max-width: 507px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,206 @@
+.cards {
+  max-width: 840px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.short-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 31px;
+}
+
+.short-by ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.short-by a {
+  font-family: "cera_proregular";
+  font-weight: 400;
+  font-size: 15px;
+  margin-right: 40px;
+  text-decoration: none;
+  color: #3D3D3D;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 7px;
+}
+
+.short-by a:hover {
+  color: #46A358;
+  border-bottom: 2px solid #46A358;
+}
+
+.short-by_text {
+  font-family: "cera_proregular";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #3D3D3D;
+  margin-left: auto;
+}
+
+.products {
+  margin-bottom: 90px;
+}
+
+.card-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 840px;
+  margin: 0;
+}
+
+.card-products article {
+  border-top: solid 1px transparent;
+  position: relative;
+  transition: border-color 0.3s ease-in-out;
+  width: 258px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-products article:hover {
+  border-top: solid 1px #46A358;
+}
+
+.card-products article .discont {
+  background-color: #46A358;
+  color: #FFFFFF;
+  padding: 7px 9px;
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  top: 14px;
+}
+
+.card-products .img-block {
+  width: 250px;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: #FBFBFB;
+}
+
+.card-products article .icons {
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
+  display: flex;
+  gap: 27px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-products article:hover .icons {
+  opacity: 1;
+}
+
+.card-products .icon img {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  padding: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-products .icon img:hover {
+  transform: scale(1.1);
+}
+
+.card-products img {
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+.card-products h4 {
+  font-family: "cera_proregular";
+  font-weight: 400;
+  font-size: 16px;
+  color: #3D3D3D;
+  margin-bottom: 6px;
+}
+
+.card-products p {
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #46A358;
+  line-height: 16px;
+  margin-bottom: 76px;
+}
+
+.card-products p .old {
+  font-family: "cera_proregular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #A5A5A5;
+  margin-right: 16px;
+  text-decoration: line-through;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination-list {
+  display: flex;
+  padding: 0;
+  gap: 8px;
+  list-style: none;
+}
+
+.pagination-list li {
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.pagination-list li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #3D3D3D;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.pagination-list li:hover {
+  background-color: #46A358;
+}
+
+.pagination-list li:hover a {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.pagination-list li:last-child a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: url("../img/Arrow - Right 2.svg") no-repeat center;
+  background-size: 18px 18px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.pagination-list li:last-child:hover a {
+  background: url("../img/Arrow-hover - Right 2.svg") no-repeat center;
+  background-size: 18px 18px;
+}
+
+/*# sourceMappingURL=cards-products.css.map */

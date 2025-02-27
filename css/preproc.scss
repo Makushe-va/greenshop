@@ -1,0 +1,292 @@
+$main_color:#46A358;
+$main_font:'cera_proregular';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container_container {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  width: 157px;
+  margin: 52px auto 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .login {
+    color: #3D3D3D;
+  }
+  .register {
+    color: $main_color;
+  }
+}
+.title .login,
+.title .register {
+  font-size: 20px;
+}
+.description {
+  color: #3D3D3D;
+  font-size: 13px;
+  margin: 0 auto 14px;
+  width: 300px;
+}
+.form-input {
+  width: 300px;
+  height: 40px;
+  margin: 0 auto 16px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #3D3D3D;
+  padding: 0 10px;
+}
+.form-button {
+  width: 300px;
+  height: 40px;
+  margin: 0 auto 36px;
+  display: block;
+  font-size: 16px;
+  background-color: $main_color;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.or_register {
+  width: 300px;
+  margin: 0 auto 27px;
+  text-align: center;
+  font-size: 13px;
+  color: #3D3D3D;
+}
+.social_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 40px;
+  margin: 0 auto 15px;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #727272;
+  font-size: 13px;
+}
+.social_link img {
+  width: 20px;
+  height: 20px;
+  margin-right: 9px;
+}
+/*index_html*/
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 0;
+}
+header{
+  margin-bottom: 12px;
+  padding-top: 30px;
+  a{
+    img{
+      display: block;
+    }
+  }
+  nav{
+    flex-grow: 1;
+    margin-left: 229px;
+    ul{
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 50px;
+      margin: 0;
+      padding: 0;
+      li{
+        position: relative;
+        a{
+        font-family: $main_font, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: #3d3d3d;
+        text-decoration: none;
+        position: relative;
+      }
+      }
+    }
+  }
+}
+header nav ul li a:before{
+  content: '';
+  display: block;
+  background: $main_color;
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom:-25px;
+  transition: 0.4s;
+}
+header nav ul li a:hover{
+  color: $main_color;
+  font-family: $main_font, sans-serif;
+  font-weight: 700;
+}
+header nav ul li a:hover:before{
+  width: 100%;
+}
+
+header nav ul li .dropdown{
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  left: -60px;
+  padding-top: 40px;
+}
+header nav ul li .dropdown a:before{
+  display: none;
+}
+header nav ul li .dropdown a{
+  padding: 8px 14px;
+  min-width: 188px;
+  display: inline-block;
+  background-color: #EDF6EE;
+  font-family: $main_font, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3D3D3D;
+  line-height: 20px;
+  transition: 0.3s;
+  position: relative;
+}
+header nav ul li .dropdown a:hover{
+  background-color: #1A712A;
+  color: white;
+}
+header nav ul li .dropdown li:last-of-type a:after{
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 10px;
+  position: absolute;
+  right: 17px;
+  top: 12px;
+  background: url("../img/arow.svg") ;
+}
+header nav ul li .dropdown li:last-of-type a:hover:after{
+  background: url("../img/arow_hover.svg");
+  transform: rotate(180deg);
+}
+header nav ul li.drop:hover .dropdown{
+  display: block;
+}
+header nav ul li .dropdown-dropdown{
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: -148px;
+  left: 190px;
+  padding-top: 40px;
+}
+header nav ul li .dropdown-dropdown a:before{
+  display: none;
+}
+header nav ul li .dropdown-dropdown a{
+  padding: 8px 14px;
+  min-width: 178px;
+  display: inline-block;
+  background-color: #EDF6EE;
+  font-family: $main_font, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #3D3D3D;
+  line-height: 20px;
+  position: relative;
+}
+header nav ul li .dropdown-dropdown li a:after {
+  display: none !important;
+  content: none;
+}
+header nav ul li.drop-drop:hover .dropdown-dropdown{
+  display: block;
+}
+header .login{
+  background:$main_color;
+  border-radius: 6px;
+  padding: 7px 17px;
+  display: flex;
+  align-items: center;
+  font-family: $main_font, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s;
+}
+header .login svg {
+  margin-right: 4px;
+}
+header .login svg path{
+  transition: 0.4s;
+}
+header .login:hover{
+  background-color: white;
+  color: $main_color;
+}
+header .login:hover svg path{
+  stroke: $main_color;
+}
+@import "banner";
+@import "sidebar";
+@import "cards-products";
+@import "blogs";
+@import "footer";
+
+.ui-accordion .ui-accordion-header{
+  padding: 20px 76px 20px 44px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  border: 1px solid #242424;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.ui-accordion .ui-accordion-content{
+  border: 1px solid #242424;
+  border-radius: 0px 0px 8px 8px;
+  border-top: none;
+  margin-bottom: 16px;
+}
+.ui-accordion .ui-accordion-header.ui-state-active{
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: none;
+  margin-bottom: 0;
+  color: #242424;
+}
+.ui-icon{
+  background-image: url("https://www.limitlessx.com/cdn/shop/t/68/assets/chevron-down.svg")!important;
+  background-position: 0;
+  width: 32px;
+  height: 32px;
+  text-indent: 0;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  transition: 0.5s;
+  transform: rotate(-90deg);
+
+}
+.ui-accordion .ui-accordion-header.ui-state-active .ui-icon {
+  transform: rotate(0deg);
+}
+
+

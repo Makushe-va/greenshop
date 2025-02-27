@@ -1,0 +1,52 @@
+.all-sidebar {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FBFBFB;
+  padding: 20px;
+}
+
+.sidebar_title {
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #3D3D3D;
+  margin-bottom: 7px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: auto;
+}
+
+.sidebar ul li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.sidebar ul li a {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  color: #3D3D3D;
+  font-family: "cera_proregular";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  color: #46A358;
+  font-weight: 700;
+}
+
+.super-sale img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=sidebar.css.map */
