@@ -315,4 +315,12 @@ header .login:hover svg path{
   0% { opacity: 1; }
   100% { opacity: 0;}
 }
+.nav-but-wrap{
+  display: none;
+}
+@media only screen and (max-width: 390px) {
+  .nav-but-wrap{
+    display: inline-block;
+  }
+}
 

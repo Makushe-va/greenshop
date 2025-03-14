@@ -1131,5 +1131,14 @@ footer ul li {
     opacity: 0;
   }
 }
+.nav-but-wrap {
+  display: none;
+}
+
+@media only screen and (max-width: 390px) {
+  .nav-but-wrap {
+    display: inline-block;
+  }
+}
 
 /*# sourceMappingURL=preproc.css.map */

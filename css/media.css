@@ -5,15 +5,15 @@
         margin: auto;
         max-width: 390px;
     }
-    header nav {
-        margin-left: 0;
-    }
-    header nav ul {
-        gap: 15px;
-    }
-    header nav {
-        display: none;
-    }
+    /*header nav {*/
+    /*    margin-left: 0;*/
+    /*}*/
+    /*header nav ul {*/
+    /*    gap: 15px;*/
+    /*}*/
+    /*header nav {*/
+    /*    display: none;*/
+    /*}*/
     .banner_title_title {
         text-align: center;
     }
